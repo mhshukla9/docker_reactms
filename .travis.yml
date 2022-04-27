@@ -4,9 +4,9 @@ services:
   - docker
 
 before_install: 
-  docker build -t mhshukla9/docker-reactnew -f Dockerfile.dev
+  docker build -t mhshukla9/docker-reactms -f Dockerfile.dev
 script:
-  - docker run -e CI=true mhshukla9/docker-reactnew npm run test
+  - docker run -e CI=true mhshukla9/docker-reactms npm run test
 deploy:
   provider: elasticbeanstalk
   region: "ca-central"
