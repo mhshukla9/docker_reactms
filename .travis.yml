@@ -9,7 +9,7 @@ before_install:
 
 script:
   - docker run -e CI=true mhshukla9/docker-reactms npm run test
-
+    
 deploy:
   provider: elasticbeanstalk
   region: "ca-central"
