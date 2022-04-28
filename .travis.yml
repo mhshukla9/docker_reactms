@@ -15,8 +15,8 @@ deploy:
   region: "ca-central"
   app: "Docker-reactnew"
   env: "Dockerreactnew-env"
-  bucket: "elasticbeanstalk-ca-central-1-629659608621"
-  path: "Docker-reactnew"
+  bucket_name: "elasticbeanstalk-ca-central-1-629659608621"
+  bucket_path: "Docker-reactnew"
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
