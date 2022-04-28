@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install: 
-  docker build  -f Dockerfile.dev -t mhshukla9/docker-reactms
+  - docker build  -f Dockerfile.dev -t mhshukla9/docker-reactms .
 script:
   - docker run -e CI=true mhshukla9/docker-reactms npm run test
 deploy:
